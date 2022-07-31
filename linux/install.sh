@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install xclip neovim
+
 sudo apt-get install bash-completion
 git submodule update --init --recursive
 
