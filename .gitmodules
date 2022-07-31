@@ -1,3 +1,6 @@
 [submodule "linux/complete-alias"]
 	path = linux/complete-alias
 	url = git@github.com:cykerway/complete-alias.git
+[submodule "linux/neovim"]
+	path = linux/neovim
+	url = git@github.com:neovim/neovim.git
