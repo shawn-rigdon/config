@@ -40,6 +40,9 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
+" AI tools
+Plug 'github/copilot.vim'
+
 set encoding=UTF-8
 
 call plug#end()
