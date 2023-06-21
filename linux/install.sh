@@ -32,7 +32,5 @@ cp -r nerdfonts ~/.local/share/fonts/
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 . ~/.bashrc
+sudo npm i -g pyright
 nvim --headless +PlugInstall +qall
-pushd ~/.local/share/nvim/plugged/coc.nvim
-yarn install
-popd
