@@ -9,6 +9,7 @@
 :set clipboard+=unnamedplus
 "autocmd FileType c,cpp,python,sh,proto,cmake set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 "autocmd FileType make set noexpandtab tabstop=4 shiftwidth=4 softtabstop=0
+autocmd FileType html,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 call plug#begin()
 
@@ -42,6 +43,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 
 " AI tools
 Plug 'github/copilot.vim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim'
 
 set encoding=UTF-8
 
