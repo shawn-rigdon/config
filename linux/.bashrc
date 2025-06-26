@@ -132,27 +132,13 @@ REPOS=/home/srigdon/repos
 #export PATH=/usr/local/lib64/:/usr/local/cuda:${LFADS_PATH}:${LFADSLITE_PATH}:$PATH
 #export PYTHONPATH=$PYTHONPATH:${LFADS_PATH}:${SNEL_REPO_PATH}:${NOMAD_PATH}:${ML_LINEAR_MODELS}:/usr/local/cuda
 #export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export PATH="/usr/local/cuda/bin:$PATH" # for instant nerf
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH" # for instant nerf
 
 #isi rt-pad GRPC lib path
 rtpad_path=${REPOS}/isi/rt-pad
 #export LD_LIBRARY_PATH=${rtpad_path}/lib/grpc/lib:${LD_LIBRARY_PATH}
-export LD_LIBRARY_PATH=${rtpad_path}/lib:${LD_LIBRARY_PATH}
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/srigdon/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/srigdon/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/srigdon/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/srigdon/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+#export LD_LIBRARY_PATH=${rtpad_path}/lib:${LD_LIBRARY_PATH}
 
 
 # Nodejs
@@ -161,3 +147,13 @@ DISTRO=linux-x64
 export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+export ANDROID_HOME="/home/srigdon/Android/Sdk"
+
+export JAVA_HOME="/home/srigdon/android-studio/jbr"
+
+export NDKROOT="/home/srigdon/Android/Sdk/ndk/25.1.8937393"
+export NDK_ROOT="/home/srigdon/Android/Sdk/ndk/25.1.8937393"
+. "$HOME/.cargo/env"
+
