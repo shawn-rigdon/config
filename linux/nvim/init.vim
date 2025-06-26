@@ -1,3 +1,4 @@
+let mapleader = " "
 :set number
 :set relativenumber
 :set autoindent
@@ -51,9 +52,9 @@ call plug#end()
 "Plug 'https://github.com/preservim/nerdtree' " NerdTree
 
 " require plugin configs
-lua require('srigdon')
+lua require('plugins')
 
-nnoremap <C-f> :NvimTreeFocus<CR>
+nnoremap <C-f> <cmd>NvimTreeFocus<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
